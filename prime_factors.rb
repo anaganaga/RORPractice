@@ -2,9 +2,14 @@ def prime_factors(n)
 	return [] if n.nil? || n <= 1
 
 	factors = []
-	(2..n).each do |i|
-		if n % i == 0
-			factors << i
+	divisor = 2
+
+	while n > 1
+		if n % divisor == 0
+			factors << divisor
+			n= n/divisor
+		else
+			divisor += 1
 		end
 	end
 	factors

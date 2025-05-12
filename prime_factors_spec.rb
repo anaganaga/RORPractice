@@ -17,4 +17,8 @@ RSpec.describe "Prime Factors" do
 	it "returns 3 when input is 3" do
 		expect(prime_factors(3)).to eq([3])
 	end
+
+	it "returns [2,2] when input is 4" do
+		expect(prime_factors(4)).to eq([2, 2])
+	end
 end
