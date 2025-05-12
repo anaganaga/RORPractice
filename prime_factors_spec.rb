@@ -9,4 +9,12 @@ RSpec.describe "Prime Factors" do
 	it "returns empty array when input is less than equal to 1" do
 		expect(prime_factors(1)).to eq([])
 	end
+
+	it "returns 2 when input is 2" do
+		expect(prime_factors(2)).to eq([2])
+	end
+
+	it "returns 3 when input is 3" do
+		expect(prime_factors(3)).to eq([3])
+	end
 end
