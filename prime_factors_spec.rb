@@ -49,4 +49,8 @@ RSpec.describe "Prime Factors" do
 	it "returns [2, 37] when input is 74" do
 		expect(prime_factors(74)).to eq([2, 37])
 	end
+
+	it "returns prime number when input is a prime number" do
+		expect(prime_factors(61)).to eq([61])
+	end
 end
