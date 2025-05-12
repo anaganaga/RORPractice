@@ -4,13 +4,15 @@ def prime_factors(n)
 	factors = []
 	divisor = 2
 
-	while n > 1
-		if n % divisor == 0
+	while divisor <= (Math.sqrt(n).to_i)
+		if (n % divisor).zero?
 			factors << divisor
 			n= n/divisor
 		else
 			divisor += 1
 		end
 	end
+	factors << n if n > 1
+
 	factors
 end
