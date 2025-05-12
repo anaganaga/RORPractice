@@ -6,6 +6,14 @@ RSpec.describe "Prime Factors" do
 		expect(prime_factors(nil)).to eq([])
 	end
 
+	it "returns empty array when input is string of characters" do
+		expect(prime_factors("teststring")).to eq([])
+	end
+
+	it "returns empty array when input is string of characters" do
+		expect(prime_factors("999")).to eq([3, 3, 3, 37])
+	end
+
 	it "returns empty array when input is less than equal to 1" do
 		expect(prime_factors(1)).to eq([])
 	end
